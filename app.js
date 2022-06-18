@@ -12,7 +12,20 @@ or whatever and rename it to avoid duplicate names
 
 import { searchYear2 } from './formulas.js';
 
-console.log(searchYear2(2022));
+searchYear2(2000);
+
+/*
+Uncaught TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at searchYear2 (formulas.js:22:20)
+    at app.js:15:1
+*/
+
+
+
+
+
+//console.log(searchYear2(2022)); // undefined
 
 //console.log(Years, Years1, Years2);
 /*let Years1 = [

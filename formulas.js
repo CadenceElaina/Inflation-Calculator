@@ -15,16 +15,24 @@ aggregating modules - export { Years } from './CPITable.js';
     }
 }*/ 
 
-import {Years2} from './debug';
+import {Years2} from './debug.js';
+
+/*
+Uncaught TypeError: Cannot convert undefined or null to object
+    at Function.keys (<anonymous>)
+    at searchYear2 (formulas.js:22:20)
+    at app.js:15:1
+*/
 
 export function searchYear2(year) {
-    for (let i = 0; i < Years2.length; i++) {
-        if (Years2[i] == year){
+    for (let i = 0; i < Object.keys(Years2).length; i++) {
+        if (Object.keys(Years2[i]) == year){
             console.log(Years2[i]);
             return Years2[i];
         }
     }
 }
+
 //searchYear(2022);
 //searchYear1(2022);
 //console.log(Years1);
