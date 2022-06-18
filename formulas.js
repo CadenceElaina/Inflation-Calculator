@@ -3,20 +3,24 @@
 /*
 aggregating modules - export { Years } from './CPITable.js';
 */
-export { Years, Years1 } from "./CPITable";
-export { Years2 } from "./debug";
-const arrCPIs = Object.entries(Years);
+//export { Years, Years1 } from "./CPITable";
+//export { Years2 } from "./debug";
+//const arrCPIs = Object.entries(Years);
 
-export function searchYear(year) {
+/*export function searchYear(year) {
     for (let i = 0; i < Years.length; i++) {
         if (Years[i] == year){
             return Years[i];
         }
     }
-}
-function searchYear1(year) {
+}*/ 
+
+import {Years2} from './debug';
+
+export function searchYear2(year) {
     for (let i = 0; i < Years2.length; i++) {
         if (Years2[i] == year){
+            console.log(Years2[i]);
             return Years2[i];
         }
     }
