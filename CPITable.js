@@ -1,3 +1,9 @@
+/* ONLY 1 default per module... ex: export default function sayName(){
+    console.log("Cadence!");
+}
+then in other file - import {default as name} from './CPITable.js'
+or as - import name from './CPITable.js
+*/
 export let Years1 = [
     { "2023": [1, 2, 3,] },
     { "2024": [4, 5, 6] }
