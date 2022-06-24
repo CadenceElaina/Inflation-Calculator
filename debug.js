@@ -1,4 +1,4 @@
-export const Years2 = {
+/* export const Years2 = {
     //YearCPI	Change	Year-over-year (%)
     2022: [286.75, 15.78, 5.83],
     2021: [270.97, 12.16, 4.70],
@@ -111,3 +111,4 @@ export const Years2 = {
     1914: [10.02, 0.13, 0.32],
     1913: [9.88, 0, 0]
 }
+ */
