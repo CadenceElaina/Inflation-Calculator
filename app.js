@@ -1,4 +1,4 @@
-import { search } from "./formulas";
+import { search } from "./formulas.js";
 
 search(2000);
 

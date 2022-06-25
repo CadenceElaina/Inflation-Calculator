@@ -114,6 +114,7 @@ const CPIs = [
 export function search(year){
     let obj = CPIs.find(y => y.year === year);
     console.log(obj);
+    
 
 }
 
