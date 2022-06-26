@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
+
 }
 
 body {
@@ -13,21 +14,88 @@ body {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(52, 123, 207, 1) 100%);
 }
 
+nav {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(52, 123, 207, 1) 100%);
+    height: 20vh;
+    width: 20vh;
+    min-width: 100%;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: center;
+    align-items: center;
+    float: left;
+
+
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+a:before,
+a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #18f08b;
+    transition: 0.5s;
+}
+
+a:after {
+    left: 0;
+    bottom: -10px;
+}
+
+a:before {
+    right: 0;
+    top: -10px;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+a:hover:after,
+a:hover:before {
+    width: 100%;
+}
+
 #container {
     display: grid;
     justify-content: center;
     align-content: center;
     width: 100%;
-    min-height: 100vh;
-    grid-template-rows: repeat(4, 1fr);
+    min-height: 25vh;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    border: 1px solid #ccc;
+
+}
+
+
+.btn {
+
+    text-align: center;
+}
+
+.td1 {
+    text-align: center;
 }
 
 h2 {
-    text-align: center;
+    padding-left: 5vh;
+    text-align: left;
     font-weight: bold;
 }
+
 
 p {
     text-align: center;
@@ -39,17 +107,19 @@ p {
     grid-column: 2/4;
     background: rgb(52, 185, 207);
     background: linear-gradient(90deg, rgba(52, 185, 207, 1) 0%, rgba(255, 118, 206, 1) 100%);
+    border: rgba(255, 118, 206, 1) 2px solid;
 }
 
 #header {
     margin-top: 5vh;
-    text-align: center;
+    text-align: left;
 }
 
 #table1 {
     background-color: aliceblue;
     width: 100%;
     border: 2px solid black;
+
 }
 
 #table1 tr:hover {
@@ -57,22 +127,25 @@ p {
 }
 
 .section2 {
-    padding-top: 5vh;
+    padding-top: 3vh;
     background: rgb(52, 185, 207);
     background: linear-gradient(90deg, rgba(52, 185, 207, 1) 0%, rgba(255, 118, 206, 1) 100%);
 }
+
 
 #table2 tr th {
     width: 100%;
     height: 100%;
 }
 
-#t2Year {
-    padding-right: 72vh;
+
+#t2year {
+    float: left;
+    text-align: center;
 }
 
 .t2Head {
-    padding-right: 2.5vh;
+    padding-right: 2vh;
 }
 
 #table3 {
@@ -80,6 +153,10 @@ p {
     overflow: auto;
     max-height: 40vh;
     border: 2px solid black;
+}
+
+.table3 {
+    text-align: center;
 }
 
 #table3 td {
