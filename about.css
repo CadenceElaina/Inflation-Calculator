@@ -159,3 +159,14 @@ footer ul {
     margin: auto;
 
 }
+
+.author-img {
+    padding-top: 15vh;
+    padding-left: 40vh;
+}
+
+.author-img img {
+    border-radius: 50%;
+    max-width: 150px;
+
+}
