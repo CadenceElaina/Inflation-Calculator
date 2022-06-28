@@ -115,16 +115,19 @@ const DATA = [
 amount * (y2/y1) = y2 amount
 */
 // Const variables
-let result = 0;
+/* let result = 0;
 let year1 = Number(document.getElementById("year1").value);
 let year2 = Number(document.getElementById("year2").value);
 let amount = Number(document.getElementById("dollars").value);
+
 const btn = document.querySelector("btnCalculate");
 const value1 = document.querySelector("#value1");
-const value2 = document.querySelector("#value2");
+const value2 = document.querySelector("#value2"); */
+const amount = 100;
 export function search(year){
     let obj = DATA.find(y => y.year === year);
-    return obj.CPI;
+    console.log(obj.CPI);
+/*     let CPI1 = obj.CPI; */
 /*     console.log(obj);
     let yCPI = obj.CPI;
     console.log(yCPI); */
@@ -141,16 +144,17 @@ export function values(){
     console.log(CPIs);
 }
 
+export function calcCPI(/* year1, amount, year2 */){
 
-
-export function calcCPI(year1, amount, year2){
-    if()
     let CPI1 = search(year1);
+    CPI1 = CPI1.CPI;
     let CPI2 = search(year2);
+    CPI2 = CPI2.CPI;
     result = amount*(CPI2/CPI1);
-    
+    console.log(result);
     }
-
+/* 
+btn.addEventListener("click", calcCPI()); */
 
 
 

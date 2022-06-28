@@ -1,10 +1,9 @@
 import { search, values, calcCPI } from "./formulas.js";
 
 search(2000);
-
-values();
-
 calcCPI();
+/* values(); */
+
 
 
 //Formula
