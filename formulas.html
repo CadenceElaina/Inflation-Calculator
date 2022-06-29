@@ -34,11 +34,41 @@
 
             </section>
             <section class="section2">
-                <h2> Header</h2>
+
                 <p>The Consumer Price Index (CPI) is a measure of the average change over time in the prices paid by
                     urban consumers for a market basket of consumer goods and services. Indexes are available for the
                     U.S. and various geographic areas. Average price data for select utility, automotive fuel, and food
                     items are also available.</p>
+
+                <ul>
+                    <li>Inflation: Inflation is the decline of purchasing power of a given currency over time. A
+                        quantitative estimate of the rate at which the decline in purchasing power occurs can be
+                        reflected in the increase of an average price level of a basket of selected goods and services
+                        in an economy over some period of time. The rise in prices, which is often expressed as a
+                        percentage, means that a unit of currency effectively buys less than it did in prior periods.
+                    </li>
+                    <li>Causes: <a
+                            href="https://www.thebalance.com/causes-of-inflation-3-real-reasons-for-rising-prices-3306094">thebalance.com</a>
+                    </li>
+                    <li>Learn more about Economics: <a
+                            href="https://www.khanacademy.org/economics-finance-domain">KhanAcademy</a> </li>
+
+                </ul>
+                <ul>
+                    <li>take in year1 value, convert to float, and repeat for amount and year2</li>
+                    <li>Use search function that looks through the array of objects where each object is a year with
+                        data of that year</li>
+                    <li>Search(year1) & search(year2) to return the CPI from both years</li>
+                    <li> let result = amount * (CPI2 / CPI1);</li>
+                    <li>let value = document.getElementById("value1");
+                        value.innerHTML = "$" + result.toFixed(2); - prints the result rounding to 2 decimal points
+                        let rate = (CPI2 / CPI1) * 100;
+                        value2.innerHTML = rate.toFixed(2).concat("%"); - prints the percentage of inflation over that
+                        time period</li>
+                    <li> let btn = document.getElementById('btn');
+                        btn.addEventListener('click', calcCPI) - allows for the input boxes to change and run the
+                        calculator as many times as user likes</li>
+                </ul>
             </section>
         </div>
 
