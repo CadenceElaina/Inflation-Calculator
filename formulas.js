@@ -111,6 +111,26 @@ const DATA = [
     { year: 1913, CPI: 9.88, Change: 0, YOYpercentage: 0 }
 
 ];
+export function search(year) {
+    for (let i = 0; i < DATA.length; i++) {
+        if (DATA[i].year === year) {
+            console.log(DATA[i]);
+            let C = DATA[i].CPI;
+            console.log(C);
+            return C;
+        }
+    }
+
+    /*  const obj = DATA.filter(year => year.year == year)
+     let cpi = obj.CPI; */
+    /*     let obj = DATA.find(y => y.year === year); */
+    /*     return cpi; */
+    /*     let CPI1 = obj.CPI; */
+    /*     console.log(obj);
+        let yCPI = obj.CPI;
+        console.log(yCPI); */
+}
+
 /*
 amount * (y2/y1) = y2 amount
 */
@@ -123,7 +143,7 @@ let amount = Number(document.getElementById("dollars").value);
 const btn = document.querySelector("btnCalculate");
 const value1 = document.querySelector("#value1");
 const value2 = document.querySelector("#value2"); */
-const amount = 100;
+/* const amount = 100;
 export function search(year){
     let obj = DATA.find(y => y.year === year);
     console.log(obj.CPI);
@@ -131,20 +151,20 @@ export function search(year){
 /*     console.log(obj);
     let yCPI = obj.CPI;
     console.log(yCPI); */
-}
+/* }
 export function values(){
     let CPIs = DATA.map(function(years){
         return years.CPI;
-    })
+    }) */
 /*     for(let i=0;i<CPIs.length;i++){
 
     }
     let obj1 = Object.values(CPIs);
-    console.log(obj1); */
+    console.log(obj1); 
     console.log(CPIs);
 }
 
-export function calcCPI(/* year1, amount, year2 */){
+/* export function calcCPI(/* year1, amount, year2 ){
 
     let CPI1 = search(year1);
     CPI1 = CPI1.CPI;
