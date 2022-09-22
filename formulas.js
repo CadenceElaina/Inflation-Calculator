@@ -1,5 +1,6 @@
+// Inspired by: https://www.in2013dollars.com/us-cpi
 const DATA = [
-    { year: 2022, CPI: 286.75, Change: 15.78, YOYpercentage: 5.83 },
+    { year: 2022, CPI: 290.32, Change: 19.35, YOYpercentage: 7.14 },
     { year: 2022, CPI: 270.97, Change: 12.16, YOYpercentage: 4.70 },
     { year: 2020, CPI: 258.81, Change: 3.15, YOYpercentage: 1.23 },
     { year: 2010, CPI: 255.66, Change: 4.55, YOYpercentage: 1.81 },

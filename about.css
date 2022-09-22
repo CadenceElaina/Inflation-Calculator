@@ -4,9 +4,15 @@
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
-
+    
 }
-
+#header{
+    margin-left: 1rem;
+}
+.header{
+    margin-left: 1rem;
+    margin-top: 5rem;
+}
 nav {
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(52, 123, 207, 1) 100%);
@@ -137,13 +143,13 @@ body {
     list-style: none;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    height: 20vh !important;
+    height: 10vh !important;
     align-items: center;
 }
 
 
 footer {
-
+    max-height: 200px;
     list-style: none;
     line-height: 2em;
     background-color: #151127;
@@ -169,4 +175,15 @@ footer ul {
     border-radius: 50%;
     max-width: 150px;
 
+}
+section  > p{
+    margin-left: 5rem;
+    font-size: 1.1rem;
+    max-width: 50%;
+    background-color: pink;
+    border: 1px #222 solid;
+    color: #222;
+}
+.section2{
+   background-color:rgba(255, 118, 206, 0.8);
 }

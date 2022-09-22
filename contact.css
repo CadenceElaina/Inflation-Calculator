@@ -173,13 +173,13 @@ footer ul {
 #bio {
     position: absolute !important;
     padding-left: 50vh;
-    max-width: 80rem;
+    max-width: 70rem;
     line-height: 2rem;
 }
 
 #header {
     padding-top: 15vh;
-    padding-right: 63vh;
+    padding-right: 61vh;
     font-weight: bold;
     text-align: center;
 }
